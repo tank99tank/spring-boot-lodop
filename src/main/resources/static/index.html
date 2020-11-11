@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lodop</title>
+<script src="js/LodopFuncs.js"></script>
+<script src="http://localhost:8000/CLodopFuncs.js"></script>
+
+<script language="javascript" type="text/javascript">    
+try {
+    var LODOP=getLodop(); 
+	if (LODOP.VERSION) {
+		 if (LODOP.CVERSION)
+		 alert("当前有WEB打印服务C-Lodop可用!\n C-Lodop版本:"+LODOP.CVERSION+"(内含Lodop"+LODOP.VERSION+")"); 
+		 else
+		 alert("本机已成功安装了Lodop控件！\n 版本号:"+LODOP.VERSION); 
+
+	};
+} catch(err) {
+	
+} 
+</script> 
+
+</head>
+<body>
+
+</body>
+</html>
